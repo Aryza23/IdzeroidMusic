@@ -39,10 +39,10 @@ async def start_(client: Client, message: Message):
             [ 
                 [
                     InlineKeyboardButton(
-                        "➕ Add Me To Your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
-                ],[
+                        "➕ Add Me To Your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
                     InlineKeyboardButton(
-                        "Official Group", url=f"https://t.me/idzeroidsupport"
+                        "Official Group", url=f"https://t.me/idzeroidsupport")
+                ]
             ]
         ),
      disable_web_page_preview=True
@@ -59,13 +59,12 @@ async def start(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "Group", url=f"https://t.me/idzeroidsupport"
-                    )                    
+                    InlineKeyboardButton("Support", url=f"https://t.me/idzeroidsupport"),
+                    InlineKeyboardButton("Owner", url=f"https://t.me/idzxartez")
                 ]
             ]
         )
-    )
+   )
 
 @Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
