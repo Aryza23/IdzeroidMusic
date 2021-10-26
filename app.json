@@ -1,5 +1,5 @@
 {
-  "name": "AcidMusic",
+  "name": "IdzeroidMusic",
   "logo": "https://telegra.ph/file/32e5eb2e07444a9e215b8.png",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
@@ -27,6 +27,10 @@
       "description": "Telegram Id Of yours!",
       "required": true
     },
+    "OWNER_ID": {
+      "description": "Telegram Id Of yours!",
+      "required": true
+    },
     "SUPPORT_GROUP": {
       "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
       "required": false,
@@ -35,7 +39,7 @@
     "PROJECT_NAME": {
       "description": "Your MusicPlayer project Name.",
       "required": false,
-      "value": "AcidMusic"
+      "value": "Idzeroid Music"
     },
     "ASSISTANT_NAME": {
       "description": "Your MusicPlayer's assistant Username without @.",
