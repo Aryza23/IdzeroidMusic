@@ -4,11 +4,9 @@
      <img height="200px" src="https://telegra.ph/file/f98a719ac7c9eef65eb7e.jpg">
   </a>
 </p>
-
 <p align="center">
   <a href="https://github.com/idzero23/IdzeroidMusic/fork">
-    <img src="https://img.shields.io/github/forks/idzero23/IdzeroidMusic?label=Fork&style=social">
-    
+    <img src="https://img.shields.io/github/forks/idzero23/IdzeroidMusic?label=Fork&style=social">    
   </a>
   <a href="https://github.com/idzero23/IdzeroidMusic">
     <img src="https://img.shields.io/github/stars/idzero23/IdzeroidMusic?style=social">
