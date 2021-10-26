@@ -30,6 +30,8 @@
 ## Idzeroid Music|| 
 Idzeroid Music adalah sebuah repository music bot telegram untuk memainkan suara di voice chat group anda. 
 
+## Fyi 
+__<i>This repo im using for my telegram bot manager</i>__ [Aries](https://t.me/idzeroid_bot)
 ### Deploy To Heroku 📡</h4>
 
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/idzero23/IdzeroidMusic"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
