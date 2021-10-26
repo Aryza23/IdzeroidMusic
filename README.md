@@ -38,4 +38,4 @@ Idzeroid Music adalah sebuah repository music bot telegram untuk memainkan suara
 
 ## Special Creidt
 
-* Artezid - No Develop Just noob [Idzeroid](http://t.me/IdzXartez)
+* [Idzeroid](http://t.me/IdzXartez) - No Develop Just noob
