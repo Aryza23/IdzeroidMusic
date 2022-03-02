@@ -36,16 +36,19 @@ async def start_(client: Client, message: Message):
 💭 **[{BOT_NAME}](https://t.me/idzeroidsupport) I Am A Voice Call Group Music Player. For Info On How To Use Me, You Can Type /help**
 </b>""",
         reply_markup=InlineKeyboardMarkup(
-            [ 
+            [
                 [
                     InlineKeyboardButton(
-                        "➕ Add Me To Your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                        "➕ Add Me To Your Group ➕",
+                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                    ),
                     InlineKeyboardButton(
-                        "Official Group", url=f"https://t.me/idzeroidsupport")
+                        "Official Group", url="https://t.me/idzeroidsupport"
+                    ),
                 ]
             ]
         ),
-     disable_web_page_preview=True
+        disable_web_page_preview=True,
     )
 
 
@@ -59,12 +62,16 @@ async def start(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Support", url=f"https://t.me/idzeroidsupport"),
-                    InlineKeyboardButton("Owner", url=f"https://t.me/idzxartez")
+                    InlineKeyboardButton(
+                        "Support", url="https://t.me/idzeroidsupport"
+                    ),
+                    InlineKeyboardButton(
+                        "Owner", url="https://t.me/idzxartez"
+                    ),
                 ]
             ]
-        )
-   )
+        ),
+    )
 
 @Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
@@ -127,14 +134,14 @@ async def help_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "SUPPORT", url=f"https://t.me/IDZEROIDSUPPORT"
+                        "SUPPORT", url="https://t.me/IDZEROIDSUPPORT"
                     ),
                     InlineKeyboardButton(
                         "OWNER", url=f"https://t.me/{OWNER_NAME}"
-                    )
+                    ),
                 ]
             ]
-        )
+        ),
     )
 
 

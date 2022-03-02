@@ -28,17 +28,18 @@ async def stream(_, message: Message):
     sender_name = message.from_user.first_name
 
     keyboard = InlineKeyboardMarkup(
+        [
             [
-                [
-                    InlineKeyboardButton(
-                        text="ɢʀᴏᴜᴘ",
-                        url=f"https://t.me/idzeroidsupport"),
-                    InlineKeyboardButton(
-                        text="OWNER​",
-                        url=f"https://t.me/IdzXartez")
-                ]
+                InlineKeyboardButton(
+                    text="ɢʀᴏᴜᴘ", url="https://t.me/idzeroidsupport"
+                ),
+                InlineKeyboardButton(
+                    text="OWNER​", url="https://t.me/IdzXartez"
+                ),
             ]
-        )
+        ]
+    )
+
 
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
     url = get_url(message)
@@ -65,7 +66,6 @@ async def stream(_, message: Message):
         photo=f"{QUE_IMG}",
         reply_markup=keyboard,
         caption=f"#⃣  Your Requested Song Was Added To **queue**!\n\n⚡ __Powered by {bn} A.I__")
-        return await lel.delete()
     else:
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
         costumer = message.from_user.mention
@@ -74,4 +74,5 @@ async def stream(_, message: Message):
         reply_markup=keyboard,
         caption=f"🎧 **Now Playing** A Song Requested By {costumer}!\n\n⚡ __Powered by {bn} A.I__"
         )
-        return await lel.delete()
+
+    return await lel.delete()

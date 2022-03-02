@@ -25,23 +25,30 @@ async def update_admin(client, message: Message):
     chat_id = get_chat_id(message.chat)
     set(
         chat_id,
-        [
+        (
             member.user
-            for member in await message.chat.get_members(filter="administrators")
-        ],
+            for member in await message.chat.get_members(
+                filter="administrators"
+            )
+        ),
     )
+
     await message.reply_photo(
-                photo=f"https://telegra.ph/file/ad4eca95908b25fafe7f2.jpg",
-              caption=f"**✅ Reload Sukses __admin telah di update...__**",
-      reply_markup=InlineKeyboardMarkup(
+        photo="https://telegra.ph/file/ad4eca95908b25fafe7f2.jpg",
+        caption="**✅ Reload Sukses __admin telah di update...__**",
+        reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Support", url=f"https://t.me/idzeroidsupport"),
-                    InlineKeyboardButton("Owner", url=f"https://t.me/idzxartez")
+                    InlineKeyboardButton(
+                        "Support", url="https://t.me/idzeroidsupport"
+                    ),
+                    InlineKeyboardButton(
+                        "Owner", url="https://t.me/idzxartez"
+                    ),
                 ]
             ]
-        )
-   )
+        ),
+    )
     
 
 
@@ -183,20 +190,27 @@ async def delcmdc(_, message: Message):
 async def admincache(client, message: Message):
     set(
         message.chat.id,
-        [
+        (
             member.user
-            for member in await message.chat.get_members(filter="administrators")
-        ],
+            for member in await message.chat.get_members(
+                filter="administrators"
+            )
+        ),
     )
+
     await message.reply_photo(
-                photo=f"https://telegra.ph/file/ad4eca95908b25fafe7f2.jpg",
-              caption=f"**♻ Refresh Cache Sukses __admin cache di segarkan...__**",
-      reply_markup=InlineKeyboardMarkup(
+        photo="https://telegra.ph/file/ad4eca95908b25fafe7f2.jpg",
+        caption="**♻ Refresh Cache Sukses __admin cache di segarkan...__**",
+        reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Support", url=f"https://t.me/idzeroidsupport"),
-                    InlineKeyboardButton("Owner", url=f"https://t.me/idzxartez"),
+                    InlineKeyboardButton(
+                        "Support", url="https://t.me/idzeroidsupport"
+                    ),
+                    InlineKeyboardButton(
+                        "Owner", url="https://t.me/idzxartez"
+                    ),
                 ]
             ]
-        )
-   )
+        ),
+    )

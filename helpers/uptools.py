@@ -31,11 +31,10 @@ def fetch_heroku_git_url(api_key, app_name):
         heroku_applications = heroku.apps()
     except:
         return None
-    heroku_app = None
-    for app in heroku_applications:
-        if app.name == app_name:
-            heroku_app = app
-            break
+    heroku_app = next(
+        (app for app in heroku_applications if app.name == app_name), None
+    )
+
     if not heroku_app:
         return None
-    return heroku_app.git_url.replace("https://", "https://api:" + api_key + "@")
+    return heroku_app.git_url.replace("https://", f"https://api:{api_key}@")
