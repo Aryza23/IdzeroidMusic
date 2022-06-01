@@ -19,6 +19,6 @@ bs4
 dnspython
 SQLAlchemy
 motor
-httpx==0.13.3
+httpx==0.23.0
 heroku3
 gitpython
